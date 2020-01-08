@@ -64,7 +64,7 @@ html body div.wrapper header div.call-2-action img {
   }
 }
 html body div.wrapper header div.call-2-action h1 {
-  font-size: 3.5em;
+  font-size: 6rem;
   margin: 0;
 }
 html body div.wrapper header div.call-2-action h1,
@@ -81,7 +81,7 @@ html body div.wrapper header div.call-2-action a {
   padding: 10px 15px;
   background-color: #757575;
   border-radius: 3px;
-  font-size: 1.2em;
+  font-size: 2rem;
 }
 html body section#first-section {
   display: flex;
@@ -102,10 +102,10 @@ html body section#first-section {
 }
 html body section#first-section div.content-container h2 {
   margin: 0;
-  font-size: 2em;
+  font-size: 3rem;
 }
 html body section#first-section div.content-container p {
-  font-size: 1.1em;
+  font-size: 2rem;
   line-height: 1.4;
 }
 html body section#first-section div.content-container table.skills {
@@ -150,7 +150,7 @@ html body section#second-section table.work td,
 html body section#second-section table.work th {
   border-top: 1px solid #d9ded2;
   padding: 10px 15px;
-  font-size: 1.1em;
+  font-size: 2rem;
 }
 html body section#second-section table.work tr td:first-child {
   font-weight: bold;
