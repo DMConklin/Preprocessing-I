@@ -4,62 +4,77 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
-body {
+html {
+  font-size: 62.5%;
+}
+html body {
   font-family: 'Barlow', sans-serif;
+  font-size: 1.6rem;
   margin: 0;
 }
-body div.wrapper {
+html body div.wrapper {
   margin: 0 auto;
 }
 @media (min-width: 920px) {
-  body div.wrapper {
+  html body div.wrapper {
     width: 920px;
   }
 }
-body div.wrapper header nav {
+html body div.wrapper header nav {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   height: 75px;
 }
-body div.wrapper header nav ul {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 920px) {
+  html body div.wrapper header nav {
+    justify-content: flex-end;
+  }
 }
-body div.wrapper header nav ul li {
+html body div.wrapper header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+@media (min-width: 920px) {
+  html body div.wrapper header nav ul {
+    width: 35%;
+    justify-content: space-between;
+  }
+}
+html body div.wrapper header nav ul li {
   list-style: none;
   display: inline-block;
 }
-body div.wrapper header nav ul li a {
+html body div.wrapper header nav ul li a {
   text-decoration: none;
   color: black;
 }
-body div.wrapper header div.call-2-action {
+html body div.wrapper header div.call-2-action {
   background-color: #e6e9ec;
   border-radius: 5px;
   padding: 60px 30px;
 }
-body div.wrapper header div.call-2-action img {
+html body div.wrapper header div.call-2-action img {
   width: 100%;
 }
 @media (min-width: 920px) {
-  body div.wrapper header div.call-2-action img {
+  html body div.wrapper header div.call-2-action img {
     width: 50%;
   }
 }
-body div.wrapper header div.call-2-action h1 {
+html body div.wrapper header div.call-2-action h1 {
   font-size: 3.5em;
   margin: 0;
 }
-body div.wrapper header div.call-2-action h1,
-body div.wrapper header div.call-2-action h2 {
+html body div.wrapper header div.call-2-action h1,
+html body div.wrapper header div.call-2-action h2 {
   font-weight: 100;
 }
-body div.wrapper header div.call-2-action hr {
+html body div.wrapper header div.call-2-action hr {
   margin: 30px 0;
 }
-body div.wrapper header div.call-2-action a {
+html body div.wrapper header div.call-2-action a {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -68,68 +83,82 @@ body div.wrapper header div.call-2-action a {
   border-radius: 3px;
   font-size: 1.2em;
 }
-body section#first-section {
+html body section#first-section {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 0;
+  padding: 30px 3%;
+  flex-direction: column;
 }
-body section#first-section div.content-container {
-  width: 48.5%;
+@media (min-width: 920px) {
+  html body section#first-section {
+    padding: 30px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-body section#first-section div.content-container h2 {
+@media (min-width: 920px) {
+  html body section#first-section div.content-container {
+    width: 48.5%;
+  }
+}
+html body section#first-section div.content-container h2 {
   margin: 0;
   font-size: 2em;
 }
-body section#first-section div.content-container p {
+html body section#first-section div.content-container p {
   font-size: 1.1em;
   line-height: 1.4;
 }
-body section#first-section div.content-container table.skills {
+html body section#first-section div.content-container table.skills {
   width: 100%;
   border: 1px solid #dadada;
   border-radius: 5px;
   border-spacing: 0;
 }
-body section#first-section div.content-container table.skills caption {
+html body section#first-section div.content-container table.skills caption {
   text-align: left;
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
-body section#first-section div.content-container table.skills tr td {
+html body section#first-section div.content-container table.skills tr td {
   border-bottom: 1px solid #dadada;
   padding: 15px;
 }
-body section#first-section div.content-container table.skills tr:nth-child(5) td {
+html body section#first-section div.content-container table.skills tr:nth-child(5) td {
   border: none;
 }
-body section#second-section {
+html body section#second-section {
   padding: 30px 0;
 }
-body section#second-section table.work {
+@media (max-width: 919px) {
+  html body section#second-section {
+    padding: 30px 3%;
+  }
+}
+html body section#second-section table.work {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
-body section#second-section table.work caption {
+html body section#second-section table.work caption {
   text-align: left;
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
-body section#second-section table.work td,
-body section#second-section table.work th {
+html body section#second-section table.work td,
+html body section#second-section table.work th {
   border-top: 1px solid #d9ded2;
   padding: 10px 15px;
   font-size: 1.1em;
 }
-body section#second-section table.work tr td:first-child {
+html body section#second-section table.work tr td:first-child {
   font-weight: bold;
 }
-body section#second-section table.work tr:nth-child(even) {
+html body section#second-section table.work tr:nth-child(even) {
   background-color: #f0f0f0;
 }
-body footer {
+html body footer {
   margin: 0;
   background-color: #757575;
   color: white;
