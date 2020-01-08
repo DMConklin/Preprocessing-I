@@ -163,6 +163,14 @@ html body footer {
   background-color: #757575;
   color: white;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 75px;
+}
+html body footer p {
+  margin: 0;
+}
+html body footer p a {
+  color: white;
 }
