@@ -1,1 +1,176 @@
-/* Compile your LESS file! */
+.table-caption {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+html body div.wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 920px) {
+  html body div.wrapper {
+    width: 920px;
+  }
+}
+html body div.wrapper header nav {
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+@media (min-width: 920px) {
+  html body div.wrapper header nav {
+    justify-content: flex-end;
+  }
+}
+html body div.wrapper header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+@media (min-width: 920px) {
+  html body div.wrapper header nav ul {
+    width: 35%;
+    justify-content: space-between;
+  }
+}
+html body div.wrapper header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+html body div.wrapper header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+html body div.wrapper header div.call-2-action {
+  background-color: #e6e9ec;
+  border-radius: 5px;
+  padding: 60px 30px;
+}
+html body div.wrapper header div.call-2-action img {
+  width: 100%;
+}
+@media (min-width: 920px) {
+  html body div.wrapper header div.call-2-action img {
+    width: 50%;
+  }
+}
+html body div.wrapper header div.call-2-action h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+html body div.wrapper header div.call-2-action h1,
+html body div.wrapper header div.call-2-action h2 {
+  font-weight: 100;
+}
+html body div.wrapper header div.call-2-action hr {
+  margin: 30px 0;
+}
+html body div.wrapper header div.call-2-action a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: #757575;
+  border-radius: 3px;
+  font-size: 2rem;
+}
+html body section#first-section {
+  display: flex;
+  padding: 30px 3%;
+  flex-direction: column;
+}
+@media (min-width: 920px) {
+  html body section#first-section {
+    padding: 30px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 920px) {
+  html body section#first-section div.content-container {
+    width: 48.5%;
+  }
+}
+html body section#first-section div.content-container h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+html body section#first-section div.content-container p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+html body section#first-section div.content-container table.skills {
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  border-spacing: 0;
+}
+html body section#first-section div.content-container table.skills caption {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html body section#first-section div.content-container table.skills tr td {
+  border-bottom: 1px solid #dadada;
+  padding: 15px;
+}
+html body section#first-section div.content-container table.skills tr:nth-child(5) td {
+  border: none;
+}
+html body section#second-section {
+  padding: 30px 0;
+}
+@media (max-width: 919px) {
+  html body section#second-section {
+    padding: 30px 3%;
+  }
+}
+html body section#second-section table.work {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+html body section#second-section table.work caption {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html body section#second-section table.work td,
+html body section#second-section table.work th {
+  border-top: 1px solid #d9ded2;
+  padding: 10px 15px;
+  font-size: 2rem;
+}
+html body section#second-section table.work tr td:first-child {
+  font-weight: bold;
+}
+html body section#second-section table.work tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+html body footer {
+  margin: 0;
+  background-color: #757575;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75px;
+}
+html body footer p {
+  margin: 0;
+}
+html body footer p a {
+  color: white;
+}
